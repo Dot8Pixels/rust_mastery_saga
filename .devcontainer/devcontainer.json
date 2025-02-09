@@ -1,0 +1,81 @@
+{
+  "name": "Rust-Dev-Env",
+  "image": "mcr.microsoft.com/devcontainers/rust:latest",
+  "runArgs": [
+    "--userns=keep-id"
+  ],
+  "containerEnv": {
+    "HOME": "/home/vscode"
+  },
+  "remoteEnv": {
+    "HOME": "/home/vscode"
+  },
+  "containerUser": "vscode",
+  "remoteUser": "vscode",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "tal7aouy.theme",
+        "mhutchie.git-graph",
+        "donjayamanne.githistory",
+        "codezombiech.gitignore",
+        "ziyasal.vscode-open-in-github",
+        "donjayamanne.git-extension-pack",
+        "stackbreak.comment-divider",
+        "alefragnani.project-manager",
+        "formulahendry.code-runner",
+        "ryu1kn.partial-diff",
+        "ritwickdey.liveserver",
+        "mgmcdermott.vscode-language-babel",
+        "swellaby.vscode-rust-test-adapter",
+        "esbenp.prettier-vscode",
+        "vivaxy.vscode-conventional-commits",
+        "hbenl.vscode-test-explorer",
+        "ms-vscode-remote.remote-wsl",
+        "ms-vscode.test-adapter-converter",
+        "ms-vscode.hexeditor",
+        "vscodevim.vim",
+        "tamasfe.even-better-toml",
+        "ms-azuretools.vscode-docker",
+        "pkief.material-icon-theme",
+        "ms-dotnettools.vscode-dotnet-runtime",
+        "ms-vscode.js-debug-nightly",
+        "eamodio.gitlens",
+        "vadimcn.vscode-lldb",
+        "rust-lang.rust-analyzer",
+        "ms-vscode.cpptools",
+        "mechatroner.rainbow-csv",
+        "ms-vscode-remote.remote-containers",
+        "fill-labs.dependi"
+      ],
+      "settings": {
+        "workbench.colorTheme": "Monokai",
+        "workbench.iconTheme": "material-icon-theme",
+        "rust-analyzer.check.command": "clippy",
+        "[rust]": {
+          "editor.defaultFormatter": "rust-lang.rust-analyzer",
+          "editor.formatOnSave": true,
+          "editor.semanticHighlighting.enabled": false
+        },
+        "[html]": {
+          "editor.defaultFormatter": "vscode.html-language-features",
+          "editor.formatOnSave": true
+        },
+        "[json]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "code-runner.fileDirectoryAsCwd": true,
+        "code-runner.runInTerminal": true,
+        "code-runner.executorMap": {
+          "rust": "cargo run # $fileName"
+        },
+        "conventionalCommits.autoCommit": false,
+        "code-runner.clearPreviousOutput": true,
+        "window.zoomLevel": 3,
+        "vim.disableExtension": true,
+        "git-graph.repository.showStashes": false
+      }
+    }
+  },
+  "postCreateCommand": "curl -sS https://starship.rs/install.sh | sh -s -- -y && echo 'eval \"$(starship init bash)\"' >> ~/.bashrc"
+}
