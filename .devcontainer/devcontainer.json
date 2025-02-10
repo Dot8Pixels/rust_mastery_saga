@@ -1,9 +1,13 @@
 {
   "name": "Rust-Dev-Env",
-  "image": "mcr.microsoft.com/devcontainers/rust:latest",
-  "runArgs": [
-    "--userns=keep-id"
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "mounts": [
+    "source=${localWorkspaceFolder},target=/workspace,type=bind",
+    "source=rust_cache,target=/usr/local/cargo,type=volume"
   ],
+  "runArgs": ["--userns=keep-id"],
   "containerEnv": {
     "HOME": "/home/vscode"
   },
@@ -63,6 +67,12 @@
         },
         "[json]": {
           "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "[jsonc]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "[dockerfile]": {
+          "editor.defaultFormatter": "ms-azuretools.vscode-docker"
         },
         "code-runner.fileDirectoryAsCwd": true,
         "code-runner.runInTerminal": true,
