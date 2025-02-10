@@ -3,6 +3,7 @@
     "rust_101/hello_crabby/Cargo.toml",
     "rust_101/immutable_vs_mutable/Cargo.toml",
     "rust_101/data_types/Cargo.toml",
-    "rust_101/control_flow/Cargo.toml"
+    "rust_101/control_flow/Cargo.toml",
+    "rust_101/functions/Cargo.toml",
   ]
 }
