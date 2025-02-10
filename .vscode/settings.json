@@ -7,6 +7,7 @@
     "rust_101/functions/Cargo.toml",
     "rust_101/ownership_and_borrowing/Cargo.toml",
     "rust_101/lifetimes/Cargo.toml",
-    "rust_101/structs/Cargo.toml"
+    "rust_101/structs/Cargo.toml",
+    "rust_101/enums/Cargo.toml",
   ]
 }
