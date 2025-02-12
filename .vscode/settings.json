@@ -15,6 +15,7 @@
     "rust_101/vectors/Cargo.toml",
     "rust_101/iterators_and_closures/Cargo.toml",
     "rust_101/hashmaps/Cargo.toml",
-    "rust_101/error_handling/Cargo.toml"
+    "rust_101/error_handling/Cargo.toml",
+    "rust_101/smart_pointers/Cargo.toml"
   ]
 }
