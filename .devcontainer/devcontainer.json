@@ -1,5 +1,5 @@
 {
-  "name": "Rust-Dev-Env",
+  "name": "Rust Dev Container",
   "build": {
     "dockerfile": "Dockerfile"
   },
@@ -7,15 +7,7 @@
     "source=${localWorkspaceFolder},target=/workspace,type=bind",
     "source=rust_cache,target=/usr/local/cargo,type=volume"
   ],
-  "runArgs": ["--userns=keep-id"],
-  "containerEnv": {
-    "HOME": "/home/vscode"
-  },
-  "remoteEnv": {
-    "HOME": "/home/vscode"
-  },
   "containerUser": "vscode",
-  "remoteUser": "vscode",
   "customizations": {
     "vscode": {
       "extensions": [
@@ -86,7 +78,8 @@
         "code-runner.clearPreviousOutput": true,
         "window.zoomLevel": 3,
         "vim.disableExtension": true,
-        "git-graph.repository.showStashes": false
+        "git-graph.repository.showStashes": false,
+        "editor.cursorBlinking": "expand"
       }
     }
   },
