@@ -9,5 +9,6 @@
     "rust_101/lifetimes/Cargo.toml",
     "rust_101/structs/Cargo.toml",
     "rust_101/enums/Cargo.toml",
+    "rust_101/traits_and_generics/Cargo.toml"
   ]
 }
