@@ -11,6 +11,7 @@
     "rust_101/enums/Cargo.toml",
     "rust_101/traits_and_generics/Cargo.toml",
     "rust_101/string_vs_str/Cargo.toml",
-    "rust_101/loops/Cargo.toml"
+    "rust_101/loops/Cargo.toml",
+    "rust_101/vectors/Cargo.toml"
   ]
 }
