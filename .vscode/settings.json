@@ -13,6 +13,7 @@
     "rust_101/string_vs_str/Cargo.toml",
     "rust_101/loops/Cargo.toml",
     "rust_101/vectors/Cargo.toml",
-    "rust_101/iterators_and_closures/Cargo.toml"
+    "rust_101/iterators_and_closures/Cargo.toml",
+    "rust_101/hashmaps/Cargo.toml"
   ]
 }
