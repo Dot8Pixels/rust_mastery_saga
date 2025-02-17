@@ -17,6 +17,7 @@
     "rust_101/hashmaps/Cargo.toml",
     "rust_101/error_handling/Cargo.toml",
     "rust_101/smart_pointers/Cargo.toml",
-    "rust_101/traits_as_a_type/Cargo.toml"
+    "rust_101/traits_as_a_type/Cargo.toml",
+    "rust_101/threading/Cargo.toml"
   ]
 }
