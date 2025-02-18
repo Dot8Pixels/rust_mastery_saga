@@ -20,6 +20,7 @@
     "rust_101/traits_as_a_type/Cargo.toml",
     "rust_101/threading/Cargo.toml",
     "rust_101/channels/Cargo.toml",
-    "rust_101/tokio/Cargo.toml"
+    "rust_101/tokio/Cargo.toml",
+    "rust_101/modules_and_crates/Cargo.toml"
   ]
 }
