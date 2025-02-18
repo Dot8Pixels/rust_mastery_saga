@@ -14,7 +14,6 @@ async fn fight_monster() {
 
 #[tokio::main]
 async fn main() {
-    // Spawn all three tasks here using tokio::spawn()
     // Crabby wants all quests to run at the same time!
 
     let gather_herbs_task = tokio::spawn(gather_herbs());
