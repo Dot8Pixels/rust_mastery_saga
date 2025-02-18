@@ -19,6 +19,7 @@
     "rust_101/smart_pointers/Cargo.toml",
     "rust_101/traits_as_a_type/Cargo.toml",
     "rust_101/threading/Cargo.toml",
-    "rust_101/channels/Cargo.toml"
+    "rust_101/channels/Cargo.toml",
+    "rust_101/tokio/Cargo.toml"
   ]
 }
