@@ -1,0 +1,29 @@
+{
+  "rust-analyzer.linkedProjects": [
+    "rust_101/hello_crabby/Cargo.toml",
+    "rust_101/immutable_vs_mutable/Cargo.toml",
+    "rust_101/data_types/Cargo.toml",
+    "rust_101/control_flow/Cargo.toml",
+    "rust_101/functions/Cargo.toml",
+    "rust_101/ownership_and_borrowing/Cargo.toml",
+    "rust_101/lifetimes/Cargo.toml",
+    "rust_101/structs/Cargo.toml",
+    "rust_101/enums/Cargo.toml",
+    "rust_101/traits_and_generics/Cargo.toml",
+    "rust_101/string_vs_str/Cargo.toml",
+    "rust_101/loops/Cargo.toml",
+    "rust_101/vectors/Cargo.toml",
+    "rust_101/iterators_and_closures/Cargo.toml",
+    "rust_101/hashmaps/Cargo.toml",
+    "rust_101/error_handling/Cargo.toml",
+    "rust_101/smart_pointers/Cargo.toml",
+    "rust_101/traits_as_a_type/Cargo.toml",
+    "rust_101/threading/Cargo.toml",
+    "rust_101/channels/Cargo.toml",
+    "rust_101/tokio/Cargo.toml",
+    "rust_101/modules_and_crates/Cargo.toml",
+    "rust_101/macros/Cargo.toml",
+    "rust_101/debugging/Cargo.toml"
+  ],
+  "rust-analyzer.cargo.features": ["proc-macro"]
+}
