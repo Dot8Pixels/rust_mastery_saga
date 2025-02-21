@@ -25,6 +25,7 @@
     "rust_101/modules_and_crates/Cargo.toml",
     "rust_101/macros/Cargo.toml",
     "rust_101/debugging/Cargo.toml",
-    "oop/basic_oop/Cargo.toml"
+    "oop/basic_oop/Cargo.toml",
+    "oop/solid/Cargo.toml"
   ]
 }
