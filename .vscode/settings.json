@@ -1,4 +1,5 @@
 {
+  "rust-analyzer.cargo.features": ["proc-macro"],
   "rust-analyzer.linkedProjects": [
     "rust_101/hello_crabby/Cargo.toml",
     "rust_101/immutable_vs_mutable/Cargo.toml",
@@ -23,7 +24,7 @@
     "rust_101/tokio/Cargo.toml",
     "rust_101/modules_and_crates/Cargo.toml",
     "rust_101/macros/Cargo.toml",
-    "rust_101/debugging/Cargo.toml"
-  ],
-  "rust-analyzer.cargo.features": ["proc-macro"]
+    "rust_101/debugging/Cargo.toml",
+    "oop/basic_oop/Cargo.toml"
+  ]
 }
