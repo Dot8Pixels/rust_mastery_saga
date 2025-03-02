@@ -1,4 +1,5 @@
 {
+  // TODO: Fix devcontainer to integrate properly with Docker Compose and the Dockerfile
   "name": "Rust Dev Container",
   "build": {
     "dockerfile": "Dockerfile"
