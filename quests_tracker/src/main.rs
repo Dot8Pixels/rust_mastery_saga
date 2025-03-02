@@ -1,4 +1,4 @@
-use quests_tracker::config::config_loader;
+use quests_tracker::{config::config_loader, infrastructure::postgres::postgres_connection};
 use std::process;
 use tracing::{error, info};
 
@@ -8,7 +8,7 @@ async fn main() {
         .with_max_level(tracing::Level::DEBUG)
         .init();
 
-    let _dotenvy_env = match config_loader::load() {
+    let dotenvy_env = match config_loader::load() {
         Ok(env) => env,
         Err(e) => {
             error!("Failed to load ENV: {}", e);
@@ -17,4 +17,15 @@ async fn main() {
     };
 
     info!("ENV has been loaded");
+
+    let _postgres_pool = match postgres_connection::establish_connection(&dotenvy_env.database.url)
+    {
+        Ok(pool) => pool,
+        Err(e) => {
+            error!("Failed to establish connection to Postgres: {}", e);
+            process::exit(1);
+        }
+    };
+
+    info!("Postgres connection has been established")
 }
