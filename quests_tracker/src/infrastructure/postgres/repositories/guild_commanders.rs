@@ -3,7 +3,7 @@ use crate::{
         entities::guild_commanders::{GuildCommanderEntity, RegisterGuildCommanderEntity},
         repositories::guild_commanders::GuildCommandersRepository,
     },
-    infrastructure::postgres::postgres_connection::PgPoolSquad,
+    infrastructure::postgres::postgres_connector::PgPoolSquad,
 };
 use anyhow::Result;
 use async_trait::async_trait;

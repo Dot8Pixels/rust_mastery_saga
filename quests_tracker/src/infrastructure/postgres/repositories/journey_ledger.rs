@@ -3,7 +3,7 @@ use crate::{
         repositories::journey_ledger::JourneyLedgerRepository,
         value_objects::quest_statuses::QuestStatuses,
     },
-    infrastructure::postgres::{postgres_connection::PgPoolSquad, schema::quests},
+    infrastructure::postgres::{postgres_connector::PgPoolSquad, schema::quests},
 };
 use anyhow::Result;
 use async_trait::async_trait;

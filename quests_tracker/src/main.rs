@@ -2,7 +2,7 @@ use std::sync::Arc;
 
 use quests_tracker::{
     config::config_loader,
-    infrastructure::{axum_http::http_serve::start, postgres::postgres_connection},
+    infrastructure::{axum_http::http_serve::start, postgres::postgres_connector},
 };
 use std::process;
 use tracing::{error, info};
@@ -23,7 +23,7 @@ async fn main() {
 
     info!("ENV has been loaded");
 
-    let postgres_pool = match postgres_connection::establish_connection(&dotenvy_env.database.url) {
+    let postgres_pool = match postgres_connector::establish_connection(&dotenvy_env.database.url) {
         Ok(pool) => pool,
         Err(e) => {
             error!("Failed to establish connection to Postgres: {}", e);

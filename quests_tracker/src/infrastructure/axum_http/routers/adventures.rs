@@ -5,7 +5,7 @@ use crate::{
         value_objects::adventurer_model::RegisterAdventurerModel,
     },
     infrastructure::postgres::{
-        postgres_connection::PgPoolSquad, repositories::adventurers::AdventurersPostgres,
+        postgres_connector::PgPoolSquad, repositories::adventurers::AdventurersPostgres,
     },
 };
 use axum::{extract::State, response::IntoResponse, routing::post, Json, Router};

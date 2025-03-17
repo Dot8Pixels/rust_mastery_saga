@@ -4,7 +4,7 @@ use crate::{
         crew_switchboard::CrewSwitchboardRepository, quest_viewing::QuestViewingRepository,
     },
     infrastructure::postgres::{
-        postgres_connection::PgPoolSquad,
+        postgres_connector::PgPoolSquad,
         repositories::{
             crew_switchboard::CrewSwitchboardPostgres, quest_viewing::QuestViewingPostgres,
         },

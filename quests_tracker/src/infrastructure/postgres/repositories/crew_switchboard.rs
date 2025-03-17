@@ -7,7 +7,7 @@ use crate::{
         repositories::crew_switchboard::CrewSwitchboardRepository,
         value_objects::quest_adventurer_junction::QuestAdventurerJunction,
     },
-    infrastructure::postgres::postgres_connection::PgPoolSquad,
+    infrastructure::postgres::postgres_connector::PgPoolSquad,
 };
 
 pub struct CrewSwitchboardPostgres {

@@ -7,7 +7,7 @@ use crate::{
         entities::quests::QuestEntity, repositories::quest_viewing::QuestViewingRepository,
         value_objects::board_checking_filter::BoardCheckingFilter,
     },
-    infrastructure::postgres::postgres_connection::PgPoolSquad,
+    infrastructure::postgres::postgres_connector::PgPoolSquad,
 };
 
 pub struct QuestViewingPostgres {

@@ -7,7 +7,7 @@ use crate::{
         entities::quests::{AddQuestEntity, EditQuestEntity},
         repositories::quest_ops::QuestOpsRepository,
     },
-    infrastructure::postgres::postgres_connection::PgPoolSquad,
+    infrastructure::postgres::postgres_connector::PgPoolSquad,
 };
 
 pub struct QuestOpsPostgres {

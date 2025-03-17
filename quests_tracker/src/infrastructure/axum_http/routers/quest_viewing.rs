@@ -5,7 +5,7 @@ use crate::{
         value_objects::board_checking_filter::BoardCheckingFilter,
     },
     infrastructure::postgres::{
-        postgres_connection::PgPoolSquad, repositories::quest_viewing::QuestViewingPostgres,
+        postgres_connector::PgPoolSquad, repositories::quest_viewing::QuestViewingPostgres,
     },
 };
 use axum::{

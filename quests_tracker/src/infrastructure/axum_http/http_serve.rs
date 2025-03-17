@@ -2,7 +2,7 @@ use crate::{
     config::config_model::DotEnvyConfig,
     infrastructure::{
         axum_http::routers::{self, adventures::routes},
-        postgres::postgres_connection::PgPoolSquad,
+        postgres::postgres_connector::PgPoolSquad,
     },
 };
 use anyhow::Result;

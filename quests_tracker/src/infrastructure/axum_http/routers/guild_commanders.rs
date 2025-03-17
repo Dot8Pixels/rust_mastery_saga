@@ -5,7 +5,7 @@ use crate::{
         value_objects::guild_commander_model::RegisterGuildCommanderModel,
     },
     infrastructure::postgres::{
-        postgres_connection::PgPoolSquad, repositories::guild_commanders::GuildCommandersPostgres,
+        postgres_connector::PgPoolSquad, repositories::guild_commanders::GuildCommandersPostgres,
     },
 };
 use axum::{extract::State, response::IntoResponse, routing::post, Json, Router};

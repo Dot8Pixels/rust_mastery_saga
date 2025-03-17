@@ -4,7 +4,7 @@ use crate::{
         journey_ledger::JourneyLedgerRepository, quest_viewing::QuestViewingRepository,
     },
     infrastructure::postgres::{
-        postgres_connection::PgPoolSquad,
+        postgres_connector::PgPoolSquad,
         repositories::{
             journey_ledger::JourneyLedgerPostgres, quest_viewing::QuestViewingPostgres,
         },

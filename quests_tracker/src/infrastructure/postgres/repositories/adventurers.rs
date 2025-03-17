@@ -1,7 +1,7 @@
 use crate::domain::entities::adventurers::AdventurerEntity;
 use crate::domain::entities::adventurers::RegisterAdventurerEntity;
 use crate::domain::repositories::adventurers::AdventurersRepository;
-use crate::infrastructure::postgres::postgres_connection::PgPoolSquad;
+use crate::infrastructure::postgres::postgres_connector::PgPoolSquad;
 use anyhow::Result;
 use async_trait::async_trait;
 use std::sync::Arc;

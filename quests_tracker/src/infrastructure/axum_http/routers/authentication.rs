@@ -4,7 +4,7 @@ use crate::{
         adventurers::AdventurersRepository, guild_commanders::GuildCommandersRepository,
     },
     infrastructure::postgres::{
-        postgres_connection::PgPoolSquad,
+        postgres_connector::PgPoolSquad,
         repositories::{
             adventurers::AdventurersPostgres, guild_commanders::GuildCommandersPostgres,
         },

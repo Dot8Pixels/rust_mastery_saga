@@ -5,7 +5,7 @@ use crate::{
         value_objects::quest_model::{AddQuestModel, EditQuestModel},
     },
     infrastructure::postgres::{
-        postgres_connection::PgPoolSquad,
+        postgres_connector::PgPoolSquad,
         repositories::{quest_ops::QuestOpsPostgres, quest_viewing::QuestViewingPostgres},
     },
 };
