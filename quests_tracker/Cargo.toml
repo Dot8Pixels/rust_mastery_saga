@@ -4,26 +4,26 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-axum = "0.8.1"
-axum-extra = { version = "0.10.0", features = ["cookie", "typed-header"] }
+axum = "0.8.3"
+axum-extra = { version = "0.10.1", features = ["cookie", "typed-header"] }
 cookie = "0.18.1"
-async-trait = "0.1.87"
-tokio = { version = "1", features = ["full"] }
+async-trait = "0.1.88"
+tokio = { version = "1.44.2", features = ["full"] }
 tower-http = { version = "0.6.1", features = ["full"] }
 tracing = "0.1.40"
 tracing-subscriber = "0.3"
-serde = { version = "1.0.214", features = ["derive"] }
+serde = { version = "1.0.219", features = ["derive"] }
 serde_json = "1.0.140"
 chrono = { version = "0.4.40", features = ["serde"] }
 mockall = "0.13.0"
-diesel = { version = "2.2.8", features = [
+diesel = { version = "2.2.9", features = [
     "postgres",
     "serde_json",
     "chrono",
     "r2d2",
 ] }
 dotenvy = "0.15.7"
-anyhow = "1.0.97"
-argon2 = "0.5.3"
-rand = "0.9.0"
+anyhow = "1.0.98"
+argon2 = { version = "0.5.3", features = ["std"] }
+rand = "0.9.1"
 jsonwebtoken = { version = "9", default-features = false }
