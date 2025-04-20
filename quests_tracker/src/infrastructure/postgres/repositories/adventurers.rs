@@ -5,7 +5,6 @@ use crate::{
     },
     infrastructure::postgres::{postgres_connector::PgPoolSquad, schema::adventurers},
 };
-
 use anyhow::Result;
 use async_trait::async_trait;
 use diesel::{insert_into, prelude::*};

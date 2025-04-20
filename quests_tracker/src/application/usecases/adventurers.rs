@@ -1,7 +1,3 @@
-use std::sync::Arc;
-
-use anyhow::Result;
-
 use crate::{
     domain::{
         repositories::adventurers::AdventurersRepository,
@@ -9,6 +5,8 @@ use crate::{
     },
     infrastructure::argon2_hashing,
 };
+use anyhow::Result;
+use std::sync::Arc;
 
 pub struct AdventurersUseCase<T>
 where
