@@ -3,14 +3,18 @@ use crate::{
     domain::repositories::{
         adventurers::AdventurersRepository, guild_commanders::GuildCommandersRepository,
     },
-    infrastructure::postgres::{
-        postgres_connector::PgPoolSquad,
-        repositories::{
-            adventurers::AdventurersPostgres, guild_commanders::GuildCommandersPostgres,
+    infrastructure::{
+        jwt_authentication::authentication_model::LoginModel,
+        postgres::{
+            postgres_connector::PgPoolSquad,
+            repositories::{
+                adventurers::AdventurersPostgres, guild_commanders::GuildCommandersPostgres,
+            },
         },
     },
 };
 use axum::{extract::State, response::IntoResponse, routing::post, Json, Router};
+use axum_extra::extract::CookieJar;
 use std::sync::Arc;
 
 pub fn routes(db_pool: Arc<PgPoolSquad>) -> Router {
@@ -37,6 +41,7 @@ pub fn routes(db_pool: Arc<PgPoolSquad>) -> Router {
 
 pub async fn adventurers_login<T1, T2>(
     State(authentication_use_case): State<Arc<AuthenticationUseCase<T1, T2>>>,
+    Json(login_model): Json<LoginModel>,
 ) -> impl IntoResponse
 where
     T1: AdventurersRepository + Send + Sync,
@@ -47,6 +52,7 @@ where
 
 pub async fn adventurers_refresh_token<T1, T2>(
     State(authentication_use_case): State<Arc<AuthenticationUseCase<T1, T2>>>,
+    jar: CookieJar,
 ) -> impl IntoResponse
 where
     T1: AdventurersRepository + Send + Sync,
@@ -57,6 +63,7 @@ where
 
 pub async fn guild_commanders_login<T1, T2>(
     State(authentication_use_case): State<Arc<AuthenticationUseCase<T1, T2>>>,
+    Json(login_model): Json<LoginModel>,
 ) -> impl IntoResponse
 where
     T1: AdventurersRepository + Send + Sync,
@@ -67,6 +74,7 @@ where
 
 pub async fn guild_commanders_refresh_token<T1, T2>(
     State(authentication_use_case): State<Arc<AuthenticationUseCase<T1, T2>>>,
+    jar: CookieJar,
 ) -> impl IntoResponse
 where
     T1: AdventurersRepository + Send + Sync,
