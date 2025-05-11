@@ -34,7 +34,7 @@ pub fn get_stage() -> Stage {
     Stage::try_from(&stage_str).unwrap_or_default()
 }
 
-pub fn get_adventurer_secret_env() -> Result<AdventurersSecret> {
+pub fn get_adventurers_secret_env() -> Result<AdventurersSecret> {
     dotenv().ok();
 
     Ok(AdventurersSecret {

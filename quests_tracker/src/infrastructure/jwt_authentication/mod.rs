@@ -15,7 +15,7 @@ pub fn generate_token(secret: String, claims: &Claims) -> Result<String> {
     Ok(token)
 }
 
-pub fn validate_token(secret: String, token: String) -> Result<Claims> {
+pub fn verify_token(secret: String, token: String) -> Result<Claims> {
     let result = decode(
         &token,
         &DecodingKey::from_secret(secret.as_ref()),
